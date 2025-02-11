@@ -5,20 +5,20 @@
 class Waitup < Formula
   desc "A tool to monitor system availability via RDP or SSH"
   homepage "https://github.com/creaked/waitup"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/creaked/waitup/releases/download/v0.1.0/waitup_Darwin_x86_64.tar.gz"
-      sha256 "61254acb70ae53e18b50fc1490ca007659893a47fae03ce81a6b208bc63b2cf6"
+      url "https://github.com/creaked/waitup/releases/download/v0.2.0/waitup_Darwin_x86_64.tar.gz"
+      sha256 "1a1a0b888ceff88931d851f99138a098d523587ba3bcfb85dc8020e43c33ba88"
 
       def install
         bin.install "waitup"
       end
     end
     on_arm do
-      url "https://github.com/creaked/waitup/releases/download/v0.1.0/waitup_Darwin_arm64.tar.gz"
-      sha256 "e40670c81642787f64a04cac1c5598b28e40adbcc700d7b9a1c75e109230a643"
+      url "https://github.com/creaked/waitup/releases/download/v0.2.0/waitup_Darwin_arm64.tar.gz"
+      sha256 "88b7a1cffc42f554fd24876f0cc6e92ce4760620642192b2f00e41108bb91f9f"
 
       def install
         bin.install "waitup"
@@ -29,8 +29,8 @@ class Waitup < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/creaked/waitup/releases/download/v0.1.0/waitup_Linux_x86_64.tar.gz"
-        sha256 "30a56a9f7f361d3c0a787ade357becf735e0dc8acc56bd8cdaa18cebb35824ca"
+        url "https://github.com/creaked/waitup/releases/download/v0.2.0/waitup_Linux_x86_64.tar.gz"
+        sha256 "b358088225086fdf35c7add5eeafdbd8b0961d32f9d7c60067385d8f23aec4d2"
 
         def install
           bin.install "waitup"
@@ -39,8 +39,8 @@ class Waitup < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/creaked/waitup/releases/download/v0.1.0/waitup_Linux_arm64.tar.gz"
-        sha256 "5e20d6816025255dad8ce75ee3940b150370bf01f962a46a87293d0942a72333"
+        url "https://github.com/creaked/waitup/releases/download/v0.2.0/waitup_Linux_arm64.tar.gz"
+        sha256 "2294cd5ffbbb915fdac4dc9b8b76e91176947297928b4bc395fde55d0192b441"
 
         def install
           bin.install "waitup"

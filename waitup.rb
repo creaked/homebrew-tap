@@ -10,7 +10,7 @@ class Waitup < Formula
   on_macos do
     on_intel do
       url "https://github.com/creaked/waitup/releases/download/v0.3.0/waitup_macOS_x86_64.tar.gz"
-      sha256 "cead520595c07c0e4f0090d9964503fd610b479a6040024021be2bb503503c21"
+      sha256 "514d9f662722e128298072754e47e1d37d9f23d3329e189db40b6f3ae2a81d06"
 
       def install
         bin.install "waitup"
@@ -18,7 +18,7 @@ class Waitup < Formula
     end
     on_arm do
       url "https://github.com/creaked/waitup/releases/download/v0.3.0/waitup_macOS_arm64.tar.gz"
-      sha256 "942aa08a1b6d8bf70ba7259660c316adab18f096f5a83380204ad1b0d5fecb34"
+      sha256 "2b89186b25b8c4e3cad43fc622c4d7f4bf7abf9e60a951733f7374992a89f255"
 
       def install
         bin.install "waitup"
@@ -30,7 +30,7 @@ class Waitup < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/creaked/waitup/releases/download/v0.3.0/waitup_Linux_x86_64.tar.gz"
-        sha256 "ab3f6cf019c68c00800bf7d72a9ba9441ce4ad0f59cd32f8d033994ba258c9fc"
+        sha256 "c563076e230d49131c693a5bfed010698a8e143d774df3a81be24f08d3df82a8"
 
         def install
           bin.install "waitup"
@@ -40,7 +40,7 @@ class Waitup < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/creaked/waitup/releases/download/v0.3.0/waitup_Linux_arm64.tar.gz"
-        sha256 "8e07c186715c76b9ffbea93a18d3cfc8c53ce4a4bc0a5e76c5aa23f13e615f5b"
+        sha256 "673bc3a5373d7dcd9b3c5c9690c2ac23689f9582bf7e75e80ab8e62f33b3fe3b"
 
         def install
           bin.install "waitup"
